@@ -17,6 +17,7 @@ namespace BigLittlePlanet
         void Update()
         {
             _dir.x = Input.GetAxis("Horizontal");
+            _dir.z = Input.GetAxis("Vertical");
             Vector3 direction = new Vector3(_dir.x, 0, 0);
             transform.position += direction * movementSpeed * Time.deltaTime;
 

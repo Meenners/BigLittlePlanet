@@ -9,43 +9,28 @@ namespace BigLittlePlanet
 
         #region Public Attributes
         public GameObject newspaperPrefab;
-        public float speed;
-        public float rotationSpeed;
+        public float arch = 0.4F;
+        public float distance = 10F;
         public Transform newpaperPileParent;
 
         #endregion
 
         #region Private Attributes
-        private Vector2 _dir = Vector2.zero;
+        
         #endregion
-
-        void Start()
-        {
-
-        }
 
         void Update()
         {
-            _dir.x = Input.GetAxis("Mouse X");
-            _dir.x = Input.GetAxis("Mouse Y");
-
             //asign to shot
             if (Input.GetMouseButtonDown(0))
             {
-                //Debug.Log(_dir.x);
-                GameObject newspaper = Instantiate(newspaperPrefab, new Vector3(0.5F,0.5F, 0.5F), Quaternion.identity);
-                newspaper.transform.parent = newpaperPileParent;
-                Rigidbody rbNewspaper = newspaper.GetComponent<Rigidbody>();
-
-                //replace with direction later
-                rbNewspaper.AddForce(transform.rotation * _dir * speed, ForceMode.Impulse);
-
-                newspaper.transform.Rotate(new Vector3(0, rotationSpeed * Time.deltaTime, 0));
+                Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
+                position = Camera.main.ScreenToWorldPoint(position);
+                GameObject news = Instantiate(newspaperPrefab, new Vector3( transform.position.x, transform.position.y+arch, transform.position.z), Quaternion.identity) as GameObject;
+                news.transform.parent = newpaperPileParent;
+                news.transform.LookAt(new Vector3(position.x, 0F, position.z));
+                news.GetComponent<Rigidbody>().AddForce(-news.transform.forward * 1000);
             }
         }
-
-
-
-
     }
 }
