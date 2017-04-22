@@ -11,12 +11,10 @@ namespace BigLittlePlanet
         public AudioClip audioClip;
         #endregion
 
-        #region Private Variable
+        #region Private Attributes
         private AudioSource _audioSource { get { return GetComponent<AudioSource>();  } }
         #endregion
 
-
-        // Use this for initialization
         void Start()
         {
             gameObject.AddComponent<AudioSource>();

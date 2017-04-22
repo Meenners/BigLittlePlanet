@@ -78,6 +78,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BigLittlePlanet\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\BigLittlePlanet\Scripts\PlayerShoot.cs" />
     <Compile Include="Assets\BigLittlePlanet\Scripts\Rotation.cs" />
     <Compile Include="Assets\BigLittlePlanet\Scripts\SoundFx.cs" />
   </ItemGroup>
