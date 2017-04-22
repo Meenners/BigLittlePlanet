@@ -44,9 +44,8 @@ public class GameManager : MonoBehaviour {
 	private void Spawner()
 	{
 		int r = Mathf.RoundToInt(Random.Range(0, Props.Length));
-		GameObject clone = Instantiate(Props[r], spawnPoint.position + Vector3.down * 20, Quaternion.Euler(rotation));
+		GameObject clone = Instantiate(Props[r], spawnPoint.position, Quaternion.Euler(rotation));
 
 		clone.transform.parent = spawnPoint;
-		clone.transform.localScale = new Vector3(clone.transform.localScale.x, clone.transform.localScale.y / 2, clone.transform.localScale.z);
 	}
 }

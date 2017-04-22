@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: GameSkybox
+  m_Shader: {fileID: 4800000, guid: 1b1032babd6d64921a50506aa07cf3b2, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Exponent: 5
+    - _Intensity: 3
+    - _Power: 5
+    - _UpVectorPitch: -145.7
+    - _UpVectorYaw: 180.2
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 0.19566391, g: 0.246328, b: 0.3455882, a: 0}
+    - _Color2: {r: 0.46323532, g: 0.4032872, b: 0.31336507, a: 0}
+    - _UpVector: {r: 0.0019670038, g: -0.82609826, b: 0.5635227, a: 0}

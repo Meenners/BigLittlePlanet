@@ -14,7 +14,7 @@ namespace BigLittlePlanet
         private Vector3 _dir = Vector3.zero;
         #endregion
 
-        void Update()
+        void FixedUpdate()
         {
             _dir.x = Input.GetAxis("Horizontal");
             _dir.z = Input.GetAxis("Vertical");
