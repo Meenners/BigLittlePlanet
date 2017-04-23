@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour {
 	{
 		battery -= 3;
 		batteryFill.fillAmount = battery * 0.01f;
+
+		if(battery <= 0)
+		{
+			GameOver();
+		}
 	}
 
 	public void AddBattery()
