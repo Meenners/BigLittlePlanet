@@ -40,13 +40,14 @@ namespace BigLittlePlanet
 
             if (!_stamina)
             {
-                transform.localScale = Vector3.MoveTowards(transform.localScale, new Vector3(transform.localScale.x, transform.localScale.y, 0), 0.1F * Time.deltaTime);
+                transform.localScale = Vector3.MoveTowards(transform.localScale, new Vector3(transform.localScale.x, transform.localScale.y, 0), 2F * Time.deltaTime);
                 if (transform.localScale.z <= 0)
                 {
                     GetComponent<Renderer>().material.color = new Color(1, 0F, 0F);
                     staminaReady = false;
                     _stamina = true;
                 }
+				_stamina = true;
             }
 
             if (_stamina && transform.localScale.z < baseScale.z)

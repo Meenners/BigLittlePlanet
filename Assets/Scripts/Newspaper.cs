@@ -32,7 +32,6 @@ namespace BigLittlePlanet
 
 				if (myTarg.destroyOnContact)
 				{
-					Debug.Log("hitwindow");
 					Destroy(collision.gameObject);
 				}
 

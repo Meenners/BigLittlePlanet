@@ -17,13 +17,18 @@ namespace BigLittlePlanet
 
         public Animator throwAnimation;
 
-        #endregion
+		#endregion
 
-        #region Private Attributes
-        
-        #endregion
+		#region Private Attributes
+		private AudioSource _aud;
+		#endregion
 
-        void Update()
+		private void Start()
+		{
+			_aud = GetComponent<AudioSource>();
+		}
+
+		void Update()
         {
             //asign to shot
             if (Input.GetMouseButtonDown(0) && stamina.GetStamina())
@@ -32,7 +37,7 @@ namespace BigLittlePlanet
 
                 //TODO
                 throwAnimation.SetBool("throw", true);
-                
+				_aud.Play();
 
                 Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
                 position = Camera.main.ScreenToWorldPoint(position);
