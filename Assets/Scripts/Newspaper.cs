@@ -22,9 +22,20 @@ namespace BigLittlePlanet
 
 		private void OnCollisionEnter(Collision collision)
 		{
+
 			if (collision.transform.GetComponent<Target>())
 			{
-				_gamemanager.ScorePoints(collision.transform.GetComponent<Target>().points);
+
+				Target myTarg = collision.transform.GetComponent<Target>();
+
+				_gamemanager.ScorePoints(myTarg.points);
+
+				if (myTarg.destroyOnContact)
+				{
+					Debug.Log("hitwindow");
+					Destroy(collision.gameObject);
+				}
+
 			}
 
 			Instantiate(explosion, transform.position, Quaternion.identity);
