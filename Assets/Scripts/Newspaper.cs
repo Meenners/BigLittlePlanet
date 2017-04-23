@@ -33,11 +33,15 @@ namespace BigLittlePlanet
 				if (myTarg.destroyOnContact)
 				{
 					Destroy(collision.gameObject);
-				}
+                    
 
-			}
+                }
 
-			Instantiate(explosion, transform.position, Quaternion.identity);
+                GameObject explo = Instantiate(explosion, transform.position, Quaternion.identity);
+                explo.GetComponent<HitParticleController>().hitpoints = myTarg.points;
+
+            }
+
 			GetComponent<BoxCollider>().enabled = false;
 			Destroy(this.gameObject, 1f);
 		}
