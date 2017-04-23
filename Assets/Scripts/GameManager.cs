@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
     public Text scoreText;
 	public Image batteryFill;
 	public LevelManager _levelManager;
+    public GameObject GameOverText;
+    public Achievement Achievements;
 
 	private void Start()
 	{
@@ -19,6 +21,8 @@ public class GameManager : MonoBehaviour {
 
 	public void ScorePoints(int points = 1)
     {
+        Achievements.Check(points);
+
         score = score + points;
         scoreText.text = score.ToString();
         PlayerPrefs.SetInt("score", score);
@@ -56,7 +60,19 @@ public class GameManager : MonoBehaviour {
 
         score = 0;
 
-		_levelManager.LoadLevel(0);
+        GameOverText.SetActive(true);
+        
+        StartCoroutine(Reset());
+
+		
+    }
+
+    IEnumerator Reset()
+    {
+        Time.timeScale = 0.1F;
+        yield return new WaitForSeconds(0.5F);
+        Time.timeScale = 1F;
+        _levelManager.LoadLevel(0);
     }
 
 }
