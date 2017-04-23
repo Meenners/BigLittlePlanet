@@ -5,6 +5,7 @@ using UnityEngine;
 public class BatteryManager : MonoBehaviour {
 
 	private GameManager _gameManager;
+	public GameObject pickupEffect;
 
 	private void Start()
 	{
@@ -15,11 +16,11 @@ public class BatteryManager : MonoBehaviour {
 	{
 		if (other.transform.tag == "Player")
 		{
-			Debug.Log("got a battery");
+			Instantiate(pickupEffect, transform.position, Quaternion.identity);
 
 			_gameManager.AddBattery();
 
-			Destroy(this.gameObject);
+			Destroy(this.gameObject, 0.1f);
 		}
 	}
 }

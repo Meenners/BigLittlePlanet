@@ -13,7 +13,10 @@ public class PlayerHealth : MonoBehaviour {
 		else
 		{
 			Destroy(other.gameObject);
-			GetComponent<AudioSource>().Play();
+
+
+			if(other.gameObject.name == "CarOne")
+				GetComponent<AudioSource>().Play();
 		}
 	}
 }
