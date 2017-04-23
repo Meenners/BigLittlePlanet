@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
 
-	private void OnCollisionEnter(Collision collision)
+	private void OnTriggerEnter(Collider other)
 	{
-		if(collision.gameObject.layer == 9 || collision.gameObject.layer == 10)
+		if (other.gameObject.layer == 9 || other.gameObject.layer == 10)
 		{
 			return;
-		} else
+		}
+		else
 		{
-			Destroy(collision.gameObject);
+			Destroy(other.gameObject);
 			GetComponent<AudioSource>().Play();
 		}
 	}

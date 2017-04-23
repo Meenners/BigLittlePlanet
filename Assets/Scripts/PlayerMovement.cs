@@ -22,9 +22,19 @@ namespace BigLittlePlanet
             Vector3 direction = new Vector3(_dir.x, 0, 0);
             transform.position += direction * movementSpeed * Time.deltaTime;
 
-           
-            //worldRotation.UpdateRotationSpeed(_dir.z * 10);
+			//Debug.DrawRay(transform.position, Vector3.down, Color.red);
 
-        }
+			//RaycastHit hit;
+
+			//if (Physics.Raycast(transform.position, -Vector3.up * 2, out hit))
+			//{
+			//	Vector3 dest = Vector3.MoveTowards(transform.position, hit.point, 1f);
+
+			//	transform.position = dest;
+			//}
+
+			//worldRotation.UpdateRotationSpeed(_dir.z * 10);
+
+		}
     }
 }

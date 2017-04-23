@@ -25367,6 +25367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 10
+  destroyOnContact: 1
 --- !u!114 &114057495970175932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25379,6 +25380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 2
+  destroyOnContact: 0
 --- !u!114 &114077317611966326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25391,6 +25393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
+  destroyOnContact: 0
 --- !u!114 &114626021385684432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25403,6 +25406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 2
+  destroyOnContact: 0
 --- !u!114 &114680915839992410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25415,6 +25419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
+  destroyOnContact: 0
 --- !u!114 &114729007065092490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25427,6 +25432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
+  destroyOnContact: 0
 --- !u!114 &114810095087146394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25451,6 +25457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
+  destroyOnContact: 0
 --- !u!114 &114936269609888962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25463,6 +25470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
+  destroyOnContact: 0
 --- !u!136 &136276305983182234
 CapsuleCollider:
   m_ObjectHideFlags: 1

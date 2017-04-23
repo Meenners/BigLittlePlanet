@@ -20,7 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4473585511988332}
   - component: {fileID: 114453294270756648}
-  m_Layer: 10
+  - component: {fileID: 114001651030072332}
+  m_Layer: 0
   m_Name: BatteryHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,8 +39,8 @@ GameObject:
   - component: {fileID: 33936273901385078}
   - component: {fileID: 23970135530287010}
   - component: {fileID: 95685676507096646}
-  - component: {fileID: 114435409338988434}
-  - component: {fileID: 65674074620056576}
+  - component: {fileID: 65978987087180884}
+  - component: {fileID: 114142883713401522}
   m_Layer: 0
   m_Name: battery
   m_TagString: Untagged
@@ -115,7 +116,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1951904226511362}
   m_Mesh: {fileID: 4300000, guid: 8053130ce54f0284eb03dd51b2315396, type: 3}
---- !u!65 &65674074620056576
+--- !u!65 &65978987087180884
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -144,7 +145,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114435409338988434
+--- !u!114 &114001651030072332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1128356357223722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073b799c23622ad4d96dc6ed15cef56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114142883713401522
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -152,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1951904226511362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073b799c23622ad4d96dc6ed15cef56f, type: 3}
+  m_Script: {fileID: 11500000, guid: 612d53c9258d39e448580c77265cb29b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114453294270756648

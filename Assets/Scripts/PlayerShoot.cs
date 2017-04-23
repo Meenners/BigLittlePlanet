@@ -39,11 +39,11 @@ namespace BigLittlePlanet
                 throwAnimation.SetBool("throw", true);
 				_aud.Play();
 
-                Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
+                Vector3 position = new Vector3(Input.mousePosition.x, -Input.mousePosition.y, distance);
                 position = Camera.main.ScreenToWorldPoint(position);
                 GameObject news = Instantiate(newspaperPrefab, new Vector3( transform.position.x, transform.position.y+arch, transform.position.z), Quaternion.identity) as GameObject;
                 news.transform.parent = newpaperPileParent;
-                news.transform.LookAt(new Vector3(-position.x, 0F, position.z));
+                news.transform.LookAt(new Vector3(-position.x * 6, 0F, position.z));
                 news.GetComponent<Rigidbody>().AddForce(-news.transform.forward * 1000);
 
                 //TODO

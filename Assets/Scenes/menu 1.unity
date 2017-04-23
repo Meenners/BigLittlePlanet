@@ -626,6 +626,26 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54433656417384464, guid: db560e1ae44cd1349a28e9a35fb74415,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 114582632097898296, guid: db560e1ae44cd1349a28e9a35fb74415,
+        type: 2}
+      propertyPath: worldRotation
+      value: 
+      objectReference: {fileID: 1685791433}
+    - target: {fileID: 54433656417384464, guid: db560e1ae44cd1349a28e9a35fb74415,
+        type: 2}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114582632097898296, guid: db560e1ae44cd1349a28e9a35fb74415,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db560e1ae44cd1349a28e9a35fb74415, type: 2}
   m_IsPrefabParent: 0
@@ -1444,7 +1464,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  battery: 100
   scoreText: {fileID: 520080043}
+  batteryText: {fileID: 0}
   _levelManager: {fileID: 0}
 --- !u!114 &1105661109
 MonoBehaviour:

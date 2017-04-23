@@ -85285,7 +85285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 15
-  destroyOnContact: 0
+  destroyOnContact: 1
 --- !u!114 &114061798358192152
 MonoBehaviour:
   m_ObjectHideFlags: 1
