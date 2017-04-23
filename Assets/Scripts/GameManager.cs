@@ -6,20 +6,13 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
 
     public int score = 0;
-
-	public float spawnRate = 1;
-	public GameObject[] Props;
-	public Transform spawnPoint;
-	public Vector3 rotation;
-
     public Text scoreText;
 	public LevelManager _levelManager;
 
 	private void Start()
 	{
 		_levelManager = FindObjectOfType<LevelManager>();
-
-		InvokeRepeating("Spawner", 0, spawnRate);
+        
 	}
 
 	public void ScorePoints(int points = 1)
@@ -41,11 +34,4 @@ public class GameManager : MonoBehaviour {
 		_levelManager.LoadLevel(0);
     }
 
-	private void Spawner()
-	{
-		int r = Mathf.RoundToInt(Random.Range(0, Props.Length));
-		GameObject clone = Instantiate(Props[r], spawnPoint.position, Quaternion.Euler(rotation));
-
-		clone.transform.parent = spawnPoint;
-	}
 }
