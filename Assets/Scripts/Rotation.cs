@@ -7,12 +7,25 @@ namespace BigLittlePlanet
     {
 
         #region Public Attributes
-        public float rotationSpeed = 20.0F;
+        public float rotationSpeed = 10.0F;
+        private float currentSpeed;
         #endregion
-        
+
+        private void Start()
+        {
+            currentSpeed = rotationSpeed;
+        }
+
         void Update()
         {
-            transform.Rotate(new Vector3(0, -rotationSpeed * Time.deltaTime, 0));
+            transform.Rotate(new Vector3(0, -currentSpeed * Time.deltaTime, 0));
+        }
+
+        public void UpdateRotationSpeed(float amount)
+        {
+            //TABLE-NG
+             //currentSpeed += amount;
+             //Debug.Log("current sppedd:" + currentSpeed);
         }
     }
 }

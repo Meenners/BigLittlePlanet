@@ -8,6 +8,7 @@ namespace BigLittlePlanet
     {
         #region Public Attributes
         public float movementSpeed = 2.0F;
+        public Rotation worldRotation;
         #endregion
 
         #region Private Attributes
@@ -20,6 +21,9 @@ namespace BigLittlePlanet
             _dir.z = Input.GetAxis("Vertical");
             Vector3 direction = new Vector3(_dir.x, 0, 0);
             transform.position += direction * movementSpeed * Time.deltaTime;
+
+           
+            //worldRotation.UpdateRotationSpeed(_dir.z * 10);
 
         }
     }
