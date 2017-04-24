@@ -13,7 +13,7 @@ public class AchievementList : MonoBehaviour {
         new string[] {"Home Sweet Home", "Home Wrecker!", "Curve Grinder!!", "Window Smasher!!!",
         "Intern", "PC Load Letter!", "Straight Shooter!!", "CEO Promotion!!!",
         "Nice To Meet You", "Nice Catch!", "Paper Cut!!", "High Fives!!!",
-        "Bird Watcher", "2 Birds, 1 Stone!", "Pidgon Slayer!!", "Eagle Eyes!!!",
+        "Bird Watcher", "2 Birds, 1 Stone!", "Pidgeon Slayer!!", "Eagle Eyes!!!",
         "Bumper to Bumper", "Road Rage!", "Freaky Fast!!", "88 MPH!!!",
         "Puppy Trainer", "Dog Whisperer!", "Dog Lover!!", "Cesar Millan!!!"
         });

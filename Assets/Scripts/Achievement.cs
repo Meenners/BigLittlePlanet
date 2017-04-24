@@ -128,7 +128,7 @@ public class Achievement : MonoBehaviour {
 
             if (birdCount == 10)
             {
-                GotAchievement("Pidgon Slayer!!", "You Hit 10 Birds, You Monster.");
+                GotAchievement("Pidgeon Slayer!!", "You Hit 10 Birds, You Monster.");
             }
 
             if (birdCount == 15)
@@ -182,7 +182,7 @@ public class Achievement : MonoBehaviour {
                 GotAchievement("Dog Lover!!", "Delivered Directly To 10 Dogs");
             }
 
-            if (dogCount == 20)
+            if (dogCount == 100)
             {
                 GotAchievement("Cesar Millan!!!", "Delivered Directly To 100 Dogs");
             }
