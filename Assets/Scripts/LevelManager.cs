@@ -21,6 +21,11 @@ public class LevelManager : MonoBehaviour {
     private void Start()
     {
 
+		if(SceneManager.GetActiveScene().buildIndex == 1)
+		{
+			return;
+		}
+
         if(!PlayerPrefs.HasKey("highscore"))
         {
             score.text = "0";
