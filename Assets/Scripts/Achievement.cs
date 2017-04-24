@@ -13,7 +13,8 @@ public class Achievement : MonoBehaviour {
     private int businessCount = 0;
 	private int peopleCount = 0;
 	private int birdCount = 0;
-	private int carCount = 0;
+    private int carCount = 0;
+    private int dogCount = 0;
 
     // Use this for initialization
     void Start () {
@@ -50,12 +51,12 @@ public class Achievement : MonoBehaviour {
 
             if (houseCount == 100)
             {
-                GotAchievement("Neighborhood Watcher!!!", "Delivered To 100 Houses");
+                GotAchievement("Window Smasher!!!", "Delivered To 100 Houses");
             }
         }
 
         //business achievements
-        if (points == 1)
+        if (points == 2)
         {
             businessCount++;
 
@@ -64,19 +65,19 @@ public class Achievement : MonoBehaviour {
                 GotAchievement("Intern", "Delivered To 5 Businesses");
             }
 
-            if (businessCount == 20)
-            {
-                GotAchievement("PC Load Letter!", "Delivered To 20 Businesses");
-            }
-
             if (businessCount == 50)
             {
-                GotAchievement("Straight Shooter!!", "Delivered To 50 Businesses");
+                GotAchievement("PC Load Letter!", "Delivered To 50 Businesses");
             }
 
             if (businessCount == 100)
             {
-                GotAchievement("CEO Promotion!!!", "Delivered To 100 Businesses");
+                GotAchievement("Straight Shooter!!", "Delivered To 100 Businesses");
+            }
+
+            if (businessCount == 200)
+            {
+                GotAchievement("CEO Promotion!!!", "Delivered To 200 Businesses");
             }
         }
 
@@ -157,6 +158,31 @@ public class Achievement : MonoBehaviour {
             }
         }
 
+        //dog achievements
+        if (points == 15)
+        {
+            dogCount++;
+            if (dogCount == 1)
+            {
+                GotAchievement("Puppy Trainer", "Delivered Directly To 1 Dog");
+            }
+
+            if (dogCount == 5)
+            {
+                GotAchievement("Dog Whisperer!", "Delivered Directly To 5 Dogs");
+            }
+
+            if (dogCount == 10)
+            {
+                GotAchievement("Dog Lover!!", "Delivered Directly To 10 Dogs");
+            }
+
+            if (dogCount == 20)
+            {
+                GotAchievement("Cesar Millan!!!", "Delivered Directly To 100 Dogs");
+            }
+        }
+
     }
 
 
@@ -164,6 +190,8 @@ public class Achievement : MonoBehaviour {
     {
         achievementHolder.SetActive(true);
 
+        //this is ugly
+        PlayerPrefs.SetString(title, description);
 
 
         titleText.text = title;
