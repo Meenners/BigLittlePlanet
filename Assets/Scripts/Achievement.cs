@@ -16,6 +16,8 @@ public class Achievement : MonoBehaviour {
     private int carCount = 0;
     private int dogCount = 0;
 
+    private int totalPoints = 0;
+
     // Use this for initialization
     void Start () {
         achievementHolder.SetActive(false);
@@ -29,6 +31,9 @@ public class Achievement : MonoBehaviour {
 
     public void Check(int points)
     {
+        totalPoints += points;
+        if(totalPoints > 100 )
+
 
         //home achievements
         if(points == 10)

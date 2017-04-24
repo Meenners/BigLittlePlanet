@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour {
             PlayerPrefs.SetInt("highscore", score);
         }
 
-        score = 0;
+        
 
         GameOverText.SetActive(true);
         
@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour {
     {
         Time.timeScale = 0.1F;
         yield return new WaitForSeconds(0.5F);
+        score = 0;
         Time.timeScale = 1F;
         _levelManager.LoadLevel(0);
     }

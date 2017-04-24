@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -15,9 +16,18 @@ public class LevelManager : MonoBehaviour {
 
     public GameObject achievementPanel;
 
+    public Text score;
+
     private void Start()
     {
 
+        if(!PlayerPrefs.HasKey("highscore"))
+        {
+            score.text = "0";
+        } else
+        {
+            score.text = PlayerPrefs.GetInt("highscore").ToString();
+        }
 
         if(achievementPanel)
             achievementPanel.SetActive(false);
