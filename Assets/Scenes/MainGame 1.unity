@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.756056, g: 0.828011, b: 1.0203897, a: 1}
+  m_IndirectSpecularColor: {r: 0.756056, g: 0.82801086, b: 1.0203897, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -955,6 +955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 734a55627b6b445439f73014049f8f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  achievementPanel: {fileID: 0}
 --- !u!4 &679304525
 Transform:
   m_ObjectHideFlags: 0
@@ -1891,6 +1892,7 @@ MonoBehaviour:
   spawnRate: 3
   Props:
   - {fileID: 1925997243389008, guid: c72b7729ec98703429ea18453a004715, type: 2}
+  - {fileID: 1065800450381670, guid: 8f12722c306d19d4e90d1217c3ace00c, type: 2}
   spawnPoint: {fileID: 224840895}
   rotation: {x: 270, y: 90, z: 0}
 --- !u!114 &1105661112
@@ -3214,7 +3216,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9acc85aabe7c63741a90c7cdc9f37bd5, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 9acc85aabe7c63741a90c7cdc9f37bd5, type: 3}
       propertyPath: m_Name
