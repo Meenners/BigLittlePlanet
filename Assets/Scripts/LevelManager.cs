@@ -51,6 +51,11 @@ public class LevelManager : MonoBehaviour {
 		//	_instance = this;
 		//}
 	}
+    public void ClearPlayerPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene(0);
+    }
 
     public void LoadLevel(int lvl)
     {
