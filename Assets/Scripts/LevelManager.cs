@@ -12,20 +12,29 @@ public class LevelManager : MonoBehaviour {
 	private static LevelManager _instance;
 
 	public static LevelManager Instance { get { return _instance; } }
-	
 
-	private void Awake()
+    public GameObject achievementPanel;
+
+    private void Start()
     {
-        DontDestroyOnLoad(this);
 
-		if (_instance != null && _instance != this)
-		{
-			Destroy(this.gameObject);
-		}
-		else
-		{
-			_instance = this;
-		}
+
+        if(achievementPanel)
+            achievementPanel.SetActive(false);
+    }
+
+    private void Awake()
+    {
+  //      DontDestroyOnLoad(this);
+
+		//if (_instance != null && _instance != this)
+		//{
+		//	Destroy(this.gameObject);
+		//}
+		//else
+		//{
+		//	_instance = this;
+		//}
 	}
 
     public void LoadLevel(int lvl)
@@ -41,7 +50,17 @@ public class LevelManager : MonoBehaviour {
 		}
 	}
 
-	public void QuitGame()
+    public void ShowAchievements()
+    {
+        achievementPanel.SetActive(true);
+    }
+
+    public void HideAchievements()
+    {
+        achievementPanel.SetActive(false);
+    }
+
+    public void QuitGame()
     {
 		
         #if UNITY_EDITOR
