@@ -1414,7 +1414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bc9755cd302804c9985f3a4e4dc95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 1
+  points: 2
   destroyOnContact: 0
 --- !u!114 &114149232803827560
 MonoBehaviour:
@@ -1440,7 +1440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bc9755cd302804c9985f3a4e4dc95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 1
+  points: 2
   destroyOnContact: 0
 --- !u!114 &114271480832493882
 MonoBehaviour:
@@ -1453,7 +1453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bc9755cd302804c9985f3a4e4dc95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 1
+  points: 2
   destroyOnContact: 0
 --- !u!114 &114276464438996108
 MonoBehaviour:
@@ -1479,7 +1479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bc9755cd302804c9985f3a4e4dc95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 1
+  points: 2
   destroyOnContact: 0
 --- !u!114 &114597803685503140
 MonoBehaviour:
@@ -1492,7 +1492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bc9755cd302804c9985f3a4e4dc95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 1
+  points: 2
   destroyOnContact: 0
 --- !u!114 &114758504477808336
 MonoBehaviour:
@@ -1517,7 +1517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bc9755cd302804c9985f3a4e4dc95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 1
+  points: 2
   destroyOnContact: 0
 --- !u!136 &136041819041002898
 CapsuleCollider:
